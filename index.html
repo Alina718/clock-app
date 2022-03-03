@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Clock App</title>
+</head>
+<body class="daytime">
+    <div class="quote-container container">
+    <div class="quote-body">
+      <blockquote id="quote-text" class="fs-400 line-height-2"></blockquote>
+      <cite id="quote-author" class="author fs-400 fw-700 line-height-2"></cite>
+    </div>
+    <img id="refresh-btn" src="assets/desktop/icon-refresh.svg" alt="refresh">
+   </div>
+  <div class="time-and-location-info container">
+    <div class="time-and-greeting">
+      <div class="greeting-container flex-ai-center"> 
+        <span class="icon"></span>
+        <p id="greeting" class="greeting fs-500 uppercase line-height-2 letter-spacing-3"></p>
+      </div>
+      <div class="time-container">
+        <h1 id="time" class="time fs-800 letter-spacing-1"></h1>
+        <span id="abbreviation"></span>
+      </div>
+      <p id="current-position" class="current-position fs-600 fw-900 uppercase line-height-3 letter-spacing-3"></p>
+    </div>
+    <button id="details-btn" class="details-btn flex-ai-center fs-300 uppercase line-height-1">More</button>
+  </div>
+  <div id="details" class="details">
+    <div class="details-items container">
+      <div class="details-item flex-ai-center current-timezone">
+        <p  class="fs-200 line-height-2 letter-spacing-2 uppercase">current timezone</p>
+        <p id="timezone" class="fs-700 fw-700"></p>
+      </div>
+      <div class="details-item flex-ai-center">
+        <p class="details-opt fs-200 line-height-2 letter-spacing-2 uppercase">day of the year</p>
+        <p id="day-of-year" class="fs-700 fw-700"></p>
+      </div>
+      <div class="details-item flex-ai-center">
+        <p class="details-opt fs-200 line-height-2 letter-spacing-2 uppercase">day of week</p>
+        <p id="day-of-week" class="fs-700 fw-700"></p>
+      </div>
+      <div class="details-item flex-ai-center">
+        <p class="details-opt fs-200 line-height-2 letter-spacing-2 uppercase">week number</p>
+        <p id="week-number" class="fs-700 fw-700"></p>
+      </div>
+    </div>
+    </div>
+      
+<script src="app.js"></script>
+</body>
+</html>
