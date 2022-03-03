@@ -30,8 +30,11 @@
     }
 }
 
-body {
+html, body {
     width: 100%;
+}
+
+body {
     height: 100vh;
     margin: 0;
     padding-block: 2.5em;
